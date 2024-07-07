@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div id="mainframe">
+        <div id ="left"><img src="calc.png" alt="calc text" ></div>
+        <div id="display"><p id="entereddigit">0</p><p id="hiddenvalue">0</p></div>
+        <div id="digitframe">
+            <div >
+                <button class="number_btns row_btn" id="seven-btn" value="7">7</button>
+                <button class="number_btns row_btn" id="eight-btn" value="8">8</button>
+                <button class="number_btns row_btn" id="nine-btn" value="9">9</button>
+                <button class="row_btn" id="del-btn" value="delete">DEL</button>
+            </div>
+            <div>
+                <button class="number_btns row_btn" id="four-btn" value="4">4</button>
+                <button class="number_btns row_btn" id="five-btn" value="5">5</button>
+                <button class="number_btns row_btn" id="six-btn" value="6">6</button>
+                <button class="number_btns row_btn" id="add-btn" value="add">+</button>
+            </div>
+            <div>
+                <button class="number_btns row_btn" id="one-btn" value="1" >1</button>
+                <button class="number_btns row_btn" id="two-btn" value="2">2</button>
+                <button class="number_btns row_btn" id="three-btn" value="3">3</button>
+                <button class="number_btns row_btn" id="subtract-btn" value="subtract">-</button>
+            </div>
+            <div>
+                <button  class="number_btns row_btn"id="decimal-btn" value="decimal">.</button>
+                <button class="number_btns row_btn" id="zero-btn" value="0">0</button>
+                <button  class="number_btns row_btn" id="divide-btn" value="divide">/</button>
+                <button class="number_btns row_btn" id="multiply-btn" value="multiply">*</button>
+            </div>
+            <div id="calc-reset-btns">
+                <button id="reset-btn" value="reset">RESET</button>
+                <button id="equals-btn" value="equals">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

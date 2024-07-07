@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+#mainframe{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    align-items: center;
+    background: #3B4664;
+    border: 1px solid;
+
+    border-image-source: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+#left{
+    width: 14em;
+    float:left;
+}
+
+#left img{
+    width:2em;
+}
+
+#display{
+    width: 16em;
+    height: 4em;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: 1px solid;
+    margin: 1em;
+    background: #181F32;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#display::-webkit-scrollbar {
+    display: none;
+}
+
+#entereddigit{
+    font-family: Segoe UI;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+#digitframe{
+    background: #252D44;
+    width: 16em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5em;
+    padding: 0.7em 0.5em;
+
+}
+
+#digitframe div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_btn{    
+    width: 4em;
+    height: 1em;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin: 0.5em;
+    padding: 1em;
+    display: inline-flex;
+    align-items: center;
+    background: #EAE3DB;
+    color: #3B4664;
+    justify-content: center;
+
+    border-radius: 0.5em;
+    color: #3B4664;
+
+    text-align: center;
+
+}
+
+#del-btn{
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #647299;
+    width: 3.5em;
+}
+
+#reset-btn,#equals-btn{
+    width: 8em;
+    height: 3em;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin: 0.5em;
+    padding: 1em;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+
+#reset-btn{
+    background: #647299;
+
+}
+
+#equals-btn{
+    background: #D13F30;
+
+}
+
+#calc-reset-btns{
+    display: flex;
+    align-items: center;
+}
+
+#hiddenvalue{
+    display: none;
+}
